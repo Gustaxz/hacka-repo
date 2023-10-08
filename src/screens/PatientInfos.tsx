@@ -19,7 +19,8 @@ function PatientInfos() {
 
 	async function submitPatientName() {
 		setLoading(true)
-		setPatientInfos([...getPatientByName(patientName)])
+		const patient = await getPatientByName(patientName)
+		setPatientInfos(patient)
 		setLoading(false)
 	}
 
