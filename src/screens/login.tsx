@@ -40,16 +40,16 @@ function Login() {
 				})
 			}
 
-			await api.post(
-				"/login",
-				{
-					email: loginInfos?.email,
-					password: loginInfos?.password,
-				},
-				{
-					timeout: 5000,
-				}
-			)
+			// await api.post(
+			// 	"/login",
+			// 	{
+			// 		email: loginInfos?.email,
+			// 		password: loginInfos?.password,
+			// 	},
+			// 	{
+			// 		timeout: 5000,
+			// 	}
+			// )
 
 			localStorage.setItem("loginInfos", JSON.stringify(loginInfos))
 			toast("Login efetuado com sucesso!", {

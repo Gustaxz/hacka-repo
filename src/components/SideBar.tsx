@@ -4,13 +4,6 @@ import { useEffect } from "react"
 import { Link } from "react-router-dom"
 
 function SideBar() {
-	useEffect(() => {
-		const userLogged = localStorage.getItem("loginInfos")
-		if (!userLogged) {
-			window.location.href = "/"
-		}
-	}, [])
-
 	return (
 		<div className="flex flex-col gap-16 h-screen py-16 px-2 bg-[#957fef] text-center">
 			<Link to="/">
