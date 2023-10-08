@@ -11,7 +11,6 @@ import { useRef, useState } from "react"
 
 import MedV from "../assets/MedV.svg"
 import { toast } from "react-toastify"
-import { api } from "../config/axios"
 import { CircleNotch } from "phosphor-react"
 
 interface LoginInfos {

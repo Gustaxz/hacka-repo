@@ -1,6 +1,5 @@
 import { Heading } from "@chakra-ui/react"
 import { QrCode, User } from "phosphor-react"
-import { useEffect } from "react"
 import { Link } from "react-router-dom"
 
 function SideBar() {
