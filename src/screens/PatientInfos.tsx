@@ -1,6 +1,6 @@
 import { CircleNotch, MagnifyingGlass } from "phosphor-react"
 import SideBar from "../components/SideBar"
-import { useEffect, useState } from "react"
+import { useState } from "react"
 import PatientInfoField from "../components/PatientInfoField"
 import { Button } from "@chakra-ui/react"
 import { toast } from "react-toastify"
