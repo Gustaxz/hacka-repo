@@ -2,15 +2,9 @@ import GeneratePDF from "../components/GeneratePDF"
 import QRCode from "../components/QRCode"
 import SideBar from "../components/SideBar"
 
-let QR_CODE_VALUE = ""
+let QR_CODE_VALUE = "3be46cf63a63f454fcd64c3dbcd8b88c9decf342"
 
 function GenerateQRCode() {
-	function getValueToGenerateQRCode() {
-		QR_CODE_VALUE = "bernard"
-	}
-
-	getValueToGenerateQRCode()
-
 	return (
 		<div className="flex">
 			<div className="w-[20vw]">
