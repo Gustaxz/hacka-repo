@@ -47,7 +47,12 @@ function PatientInfos() {
 						onChange={(ev) => {
 							setPatientName(ev.target.value)
 						}}
-						placeholder="João Gabriel Pinho da Cruz"
+						placeholder="João"
+						onKeyDown={(ev) => {
+							if (ev.key === "Enter") {
+								submitPatientName()
+							}
+						}}
 					/>
 					{loading ? (
 						<CircleNotch size={32} className="text-[#7161ef] animate-spin" />
