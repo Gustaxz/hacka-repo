@@ -1,7 +1,6 @@
 import {
 	Button,
 	FormControl,
-	FormLabel,
 	Heading,
 	Input,
 	InputGroup,
