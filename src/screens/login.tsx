@@ -7,6 +7,7 @@ import {
 	InputRightElement,
 } from "@chakra-ui/react"
 import { useRef, useState } from "react"
+import { useWindowSize } from "@uidotdev/usehooks"
 
 import MedV from "../assets/MedV.svg"
 import { toast } from "react-toastify"
@@ -21,6 +22,7 @@ function Login() {
 	const [show, setShow] = useState(false)
 	const [loginInfos, setLoginInfos] = useState<LoginInfos | null>(null)
 	const [loading, setLoading] = useState(false)
+	const size = useWindowSize()
 	const formRef = useRef<HTMLFormElement>(null)
 	const handleClick = () => setShow(!show)
 
@@ -85,7 +87,11 @@ function Login() {
 			</div>
 			<div className="flex items-center justify-center flex-1">
 				<form className="flex flex-col gap-6 w-2/3" ref={formRef}>
-					<Heading size="lg" textAlign="center">
+					<Heading
+						size={size.width ? (size.width < 768 ? "2xl" : "lg") : "2xl"}
+						textAlign="center"
+						className="text-[#7161ef]"
+					>
 						Faça seu login!
 					</Heading>
 					<FormControl>
